@@ -1,0 +1,205 @@
+Body{
+	font-family: Arial ,Sans-serif, timesNewRoman;
+	font-size:15px;
+	line-height: 1.5;
+	/*snellere manier om de bovenste 3 te gebruiken*/
+	font: 15px/1.5 Arial ,Sans-serif, timesNewRoman;
+	padding: 0;
+	margin: 0;
+	background-color: #D5DDE7;
+}
+
+/*globale klassen*/
+.container{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+
+}
+
+ul{
+	padding: 0;
+	margin: 0;
+}
+
+.button_1{
+	padding: 0 20px 0 20px;
+	height: 38px;
+	width: 150px;
+	border:none;
+	background: orange;
+	color:#ffffff;
+}
+
+.donker{
+	padding: 15px;
+	color: #ffffff;
+	background: #2C4A70;
+}
+/*header*/
+header{
+	background: #2C4A70;
+	color: #FFFFFF;
+	min-height: 70px;
+	padding-top: 30px;
+	border-bottom: orange 3px solid;
+}
+
+header a{
+	color:#ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+header li{
+	list-style: none;
+	float: left;
+	display: inline;
+	padding: 0 15px 0 15px;
+}
+
+header #logo_space{
+	float: left
+}
+
+header #logo_space h1{
+	margin: 0;
+}
+
+header #navbar{
+	float: right;
+	margin-top: 30px;
+}
+
+header .huidig, header .Bedrijf{
+	color: orange;
+	font-weight: bold;
+}
+
+header a:hover{
+	font-weight: bold;
+	color: orange;
+}
+
+/*showcase*/
+
+#showcase{
+	min-height: 400px;
+	background: url("../img/webdev.jpg") no-repeat 0 -400px;
+	text-align: center;
+	color: #ffffff;
+}
+
+#showcase h1{
+	font-size: 55px;
+	margin-top: 100px;
+	margin-bottom: 10px;
+}
+
+/*newsletter*/
+#newsletter{
+	background: #2C4A70;
+	color: #ffffff;
+	padding: 15px;
+}
+
+#newsletter h1{
+	float: left;
+	padding-right: 20px;
+}
+
+#newsletter form {
+	float: right;
+	margin-top: 20px;
+}
+
+#newsletter input[type="email"]{
+	padding:4px;
+	height: 25px;
+	width: 200px;
+}
+
+/*talen*/
+#talen{
+	margin-top: 20px
+}
+
+#talen .box{
+	float: left;
+	width: 30%;
+	padding: 10px;
+	text-align: center;
+}
+ #talen .box img{
+ 	width: 90px;
+ }
+
+ /*sidebar*/
+
+ aside#sidebar{
+ 	float: right;
+ 	width: 30%;
+ 	padding-top: 10px;
+ }
+
+ aside#sidebar .offerte input, aside#sidebar .offerte textarea{
+ 	width: 90%;
+ 	padding: 5px;
+ }
+ /*main-col*/
+article#main-col1{
+	float: left;
+	width: 65%;
+}
+
+/*Services*/
+ul#services li{
+	list-style: none;
+	padding: 20px;
+	border: #cccccc solid 1px;
+	margin-bottom: 5px;
+	background: #e6e6e6;
+
+}
+/*footer*/
+ footer{
+ 	padding: 20px;
+ 	margin-top: 20px;
+ 	color: #ffffff;
+ 	background: orange;
+ 	text-align: center;
+ }
+
+ /*Media Querries*/
+ @media(max-width: 768px){
+ 	header #logo_space, 
+ 	header nav,
+ 	header nav li,
+ 	#newsletter  h1,
+ 	#newsletter  form,
+ 	#talen .box,
+ 	article#main-col1,
+ 	aside#sidebar{
+ 		float: none;
+ 		text-align: center;
+ 		width: 100%;
+ 	}
+ 	header{
+ 		padding-bottom: 20px;
+ 	}
+
+ 	#showcase h1{
+ 		margin-top: 40px;
+ 	}
+
+ 	#newsletter button, .offerte button{
+ 		display: block;
+ 		width: 100%;
+ 	}
+
+ 	#newsletter input[type="email"], .offerte textarea, .offerte input{
+ 		width: 100%;
+ 		margin-bottom: 5px;
+ 	}
+ }
