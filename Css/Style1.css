@@ -1,3 +1,5 @@
+/* Aight maar maakt het nu eens in scss of less met iets van grunt ofzo. Maakt het veel makkelijker te onderhouden (denk naar variabellen kunnen definieren) */
+
 Body{
 	font-family: Arial ,Sans-serif, timesNewRoman;
 	font-size:15px;
@@ -173,7 +175,7 @@ ul#services li{
 
  /*Media Querries*/
  @media(max-width: 768px){
- 	header #logo_space, 
+ 	header #logo_space,
  	header nav,
  	header nav li,
  	#newsletter  h1,
